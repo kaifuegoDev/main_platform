@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;
+  --color-secondary: #ec4899;
+  --font-sora: var(--font-sora);
+  --font-kanit: var(--font-kanit);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sora), sans-serif;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.font-sora {
+  font-family: var(--font-sora);
+}
+
+.font-kanit {
+  font-family: var(--font-kanit);
+}
+
+/* Custom Utilities */
+.text-gradient {
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
